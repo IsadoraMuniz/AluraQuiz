@@ -7,7 +7,7 @@ background-position: center;
 background-image: url(${({ backgroundImage }) => backgroundImage});
 background-color: ${({ theme }) => theme.colors.mainBg};
 flex: 1;
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   background-image: none;
   &:after {
     content: "";
