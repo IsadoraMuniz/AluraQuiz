@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import {Router, useRouter} from 'next/router';
-import db from '../../db.json';
+import db from '../db.json';
 
 import QuizBackground from '../src/components/QuizBackground';
 import Widget from '../src/components/Widget';
