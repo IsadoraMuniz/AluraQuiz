@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import Head from 'next/head';
 import styled from 'styled-components';
 import React, { useState } from 'react';
@@ -9,6 +10,8 @@ import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -45,23 +48,21 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <form onSubmit={function (e){
+            <form onSubmit={(e) => {
               e.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
-            >  
-              <input
-                onChange={function(e){
-                  // name = e.target.value;
-                  setName(e.target.value);
-                }}
-               placeholder='Qual é o nome dx bonitx?'/>
-              <button type="submit" disabled={name.length === 0}>
+            >
+              <Input
+                name="nomeDoUsuario"
+                onChange={(e) => { setName(e.target.value); }}
+                placeholder='Qual é o nome dx bonitx?'
+                value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
                 Bora, {name}
-              </button>
+              </Button>
             </form>
-            
-            
           </Widget.Content>
         </Widget>
       </QuizContainer>

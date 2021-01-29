@@ -4,30 +4,35 @@
     "description": "Teste os seus conhecimentos sobre a carreira dessa artista maravilhosa e completa que é a Beyoncé !",
     "questions": [
       {
-        "image": "",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
+        "title": "Quando a diva nasceu?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "5 de janeiro",
+          "18 março",
+          "4 de setembro",
+          "4 de julho"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
+        "title": "Em que ano a Bey veio ao Brasil?",
+        "description": "",
+        "answer": 1,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "2006",
+           "2013",
+           "2015",
+           "2017"
         ]
       }
     ],
     "external": [
-      ""
+      {
+        "gif":"https://www.nattanymartins.com.br/wp-content/uploads/2019/04/Beyonce-Coachella-Performance-GIFs.gif"
+      }
+      
     ],
     "theme": {
       "colors": {
