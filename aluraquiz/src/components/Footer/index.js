@@ -7,7 +7,7 @@ padding-bottom:15px;
 padding-right: 300px;
 padding-left:400px;
 
-margin-top: 105px;
+margin-top: 100px;
 display: flex;
 align-items: center;
 border-radius: 9px; 

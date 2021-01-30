@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Bey Queenz</title>
+        <title>Bey Quinz</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -51,6 +51,7 @@ export default function Home() {
             <form onSubmit={(e) => {
               e.preventDefault();
               router.push(`/quiz?name=${name}`);
+              
             }}
             >
               <Input
