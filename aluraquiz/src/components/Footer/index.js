@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
+
 background-color: #00000070;
-padding-top: 15px;
+padding-top: 15px; 
 padding-bottom:15px;
 padding-right: 300px;
-padding-left:400px;
-
-margin-top: 100px;
+padding-left:35%;
+/* height:100px;
+line-height:100px; */
+margin-top: 99px;
 display: flex;
 align-items: center;
 border-radius: 9px; 
@@ -40,24 +42,22 @@ p{
     
 }
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1000px) {
 background-color: #00000070;
 padding-top: 10px;
 padding-bottom:10px;
 padding-right: 80px;
-padding-left:55px;
-
-margin-top: 110px;
+padding-left:23%;
+margin-top: 90px;
 display: flex;
-
 border-radius: 9px; 
 
 p{
     
     box-sizing:border-box;
     color:white;
-    
-    
+    text-align:center;
 }
 
 }
@@ -69,12 +69,11 @@ return (
   <FooterWrapper {...props}>
     <a href="https://www.alura.com.br/" ></a>
     <p>
-      Orgulhosamente criado durante
+      Orgulhosamente criado durante a Imersão React da
       {' '}
-      a
       {' '}
       <a href="https://www.alura.com.br/">
-        <span>Imersão React da Alura</span>
+        <span> Alura</span>
       </a>
     </p>
   </FooterWrapper>

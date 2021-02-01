@@ -41,8 +41,9 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-          <p>Buonasera, Katuxa !! </p>
-            <p>Prepare-se para provar se você é fã de verdade desta grante tiva pertuti noi que é nossa Queen Bey! </p>
+          {/* <p>Buonasera, Katuxa !! </p> */}
+            <p>Quer dizer que você gosta da Beyoncé, é isso?</p> 
+            <p>Então se prepare provar os seus conhecimentos sobre essa grande diva que é nossa Queen Bey! </p>
           </Widget.Content>
         </Widget>
 
@@ -50,14 +51,12 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit={(e) => {
               e.preventDefault();
-              router.push(`/quiz?name=${name}`);
-              
-            }}
+              router.push(`/quiz?name=${name}`);}}
             >
               <Input
                 name="nomeDoUsuario"
                 onChange={(e) => { setName(e.target.value); }}
-                placeholder='Qual é o nome dx bonitx?'
+                placeholder='Diz aí seu nome?'
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>

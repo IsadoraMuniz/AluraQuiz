@@ -70,7 +70,7 @@ function LoadingWidget() {
           height: '150px',
           objectFit: 'cover',
         }}
-        src={"https://media.giphy.com/media/3AMRa6DRUhMli/giphy.gif"}
+        src={"https://i.pinimg.com/originals/7e/1b/98/7e1b9840eed104a23db7b64998bba60c.gif"}
       />
       </Widget.Content>
     </Widget>

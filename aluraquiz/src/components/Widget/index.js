@@ -10,15 +10,23 @@ background-color: ${({ theme }) => {
 border-radius: 4px;
 overflow: hidden;
 h1, h2, h3 {
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
 }
+
+h1{
+  margin-left:20%;
+}
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
+  text-align:justify;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  
 }
 `;
 
