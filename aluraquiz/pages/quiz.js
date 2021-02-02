@@ -16,6 +16,7 @@ function ResultWidget({ results }) {
   const router = useRouter();
   const name = router.asPath;
   let finalName = name.replace('/quiz?name=', '');
+  let totalResult = results.filter((x) => x).length;
   return (
     <Widget>
       <Widget.Header>
@@ -33,20 +34,27 @@ function ResultWidget({ results }) {
             }
             return somatoriaAtual;
           }, 0)} */}
-          {results.filter((x) => x).length}
+          {totalResult}
           {' '}
           perguntas
         </p>
         <ul>
+          {totalResult <= 3 ? <p> Precisa melhorar, em ?! 
+              <br/> Dá uma pesquisadinha a mais, garanto 
+              que vai valer a pena</p> : totalResult >= 4 && totalResult <= 6 ? <p> Nada mal !! 
+              <br/> Você tá indo pelo caminho certo, mais um pouquinho já 
+              pode pegar a carteirinha de fã!</p> : <p> Ora, ora, encontramos um fã de verdade !!! 
+              <br/> Você realmente tá por dentro da vida da diva !</p>}
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              #
+              
+              {/* #
               {index + 1}
               {' '}
               Resultado:
               {result === true
                 ? 'Acertou'
-                : 'Errou'}
+                : 'Errou'} */}
             </li>
           ))}
         </ul>
@@ -125,7 +133,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 1 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
