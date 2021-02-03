@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { motion } from 'framer-motion';
 const FooterWrapper = styled.footer`
 
 background-color: #00000070;
@@ -66,7 +66,17 @@ p{
 function Footer(props) {
 return (
   // eslint-disable-next-line react/jsx-props-no-spreading
-  <FooterWrapper {...props}>
+  <FooterWrapper {...props}
+  as={motion.section}
+  transition={{ delay: 0.5, duration: 0.5 }}
+  variants={{
+    show: { opacity: 1 },
+    hidden: { opacity: 0 },
+  }}
+  initial="hidden"
+  animate="show"
+  
+  >
     <a href="https://www.alura.com.br/" ></a>
     <p>
       Orgulhosamente criado durante a Imersão React da

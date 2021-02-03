@@ -1,31 +1,107 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import { func } from 'prop-types';
 import db from '../db.json';
 import QuizBackground from '../src/components/QuizBackground';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
+// import loadingAnimation from './animations/loading.json';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 import AlternativesForm from '../src/components/AlternativesForm';
+// import { Lottie } from 'react-lottie'
 
-import { useRouter } from 'next/router';
-// import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
 
+function EndImage(totalResult) {
+  return (
+    totalResult <= 3 ? (
+      <img
+        alt="Descrição"
+        style={{
+          width: '100%',
+          height: '150px',
+          objectFit: 'cover',
+        }}
+        src="https://i.gifer.com/Ycn9.gif"
+      />
+    ) : totalResult >= 4 && totalResult <= 6 ? (
+      <img
+        alt="Descrição"
+        style={{
+          width: '100%',
+          height: '150px',
+          objectFit: 'cover',
+        }}
+        src="https://i.gifer.com/N5rT.gif"
+      />
+    ) : (
+      <img
+        alt="Descrição"
+        style={{
+          width: '100%',
+          height: '150px',
+          width:'450px',
+          objectFit: 'cover',
+        }}
+        src="https://media3.giphy.com/media/psuNQ0XMaYe1a/giphy.gif"
+      />
+    )
+
+  );
+}
+
+function EndMessage(totalResult) {
+  return (
+      totalResult <= 3 ? (
+      <p>
+        {' '}
+        Precisa melhorar, em ?!
+        <br />
+        {' '}
+        Dá uma pesquisadinha a mais, garanto
+        que vai valer a pena
+      </p>
+    ) : totalResult >= 4 && totalResult <= 6 ? (
+      <p>
+        {' '}
+        Nada mal !!
+        <br />
+        {' '}
+        Você tá indo pelo caminho certo, mais um pouquinho já
+        pode pegar a carteirinha de fã!
+      </p>
+    ) : (
+      <p>
+        {' '}
+        Ora, ora, encontramos um fã de verdade !!!
+        <br />
+        {' '}
+        Você realmente tá por dentro da vida da diva !
+      </p>
+    )
+
+  );
+}
 
 function ResultWidget({ results }) {
   const router = useRouter();
   const name = router.asPath;
-  let finalName = name.replace('/quiz?name=', '');
-  let totalResult = results.filter((x) => x).length;
+  const finalName = name.replace('/quiz?name=', '');
+  const totalResult = results.filter((x) => x).length;
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        <h2>Sua pontuação é...</h2>
+      </Widget.Header>
+      <Widget.Header>
+        {EndImage(totalResult)}
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          {finalName}, você acertou 
+          {finalName.charAt(0).toUpperCase() + finalName.slice(1)}
+          , você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -39,15 +115,10 @@ function ResultWidget({ results }) {
           perguntas
         </p>
         <ul>
-          {totalResult <= 3 ? <p> Precisa melhorar, em ?! 
-              <br/> Dá uma pesquisadinha a mais, garanto 
-              que vai valer a pena</p> : totalResult >= 4 && totalResult <= 6 ? <p> Nada mal !! 
-              <br/> Você tá indo pelo caminho certo, mais um pouquinho já 
-              pode pegar a carteirinha de fã!</p> : <p> Ora, ora, encontramos um fã de verdade !!! 
-              <br/> Você realmente tá por dentro da vida da diva !</p>}
+          {EndMessage(totalResult)}
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              
+
               {/* #
               {index + 1}
               {' '}
@@ -66,20 +137,29 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      {/* <Widget.Header>
+      <Widget.Header>
         Carregando...
-      </Widget.Header> */}
+      </Widget.Header>
+
+    {/* <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
+    </Widget.Content> */}
 
       <Widget.Content>
-      <img
-        alt="Descrição"
-        style={{
-          width: '100%',
-          height: '150px',
-          objectFit: 'cover',
-        }}
-        src={"https://i.pinimg.com/originals/7e/1b/98/7e1b9840eed104a23db7b64998bba60c.gif"}
-      />
+        <img
+          alt="Descrição"
+          style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+          }}
+          src="https://i.pinimg.com/originals/7e/1b/98/7e1b9840eed104a23db7b64998bba60c.gif"
+        />
       </Widget.Content>
     </Widget>
   );

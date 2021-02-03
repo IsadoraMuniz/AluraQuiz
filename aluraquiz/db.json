@@ -4,101 +4,129 @@
     "description": "Teste os seus conhecimentos sobre a carreira dessa artista maravilhosa e completa que é a Beyoncé !",
     "questions": [
       {
-        "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
-        "title": "Quando a diva nasceu?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          "5 de janeiro",
-          "18 março",
-          "4 de setembro",
-          "4 de julho"
-        ]
-      },
-      {
-        "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
-        "title": "Em que ano a Bey veio ao Brasil?",
-        "description": "",
+        "image": "https://gifimage.net/wp-content/uploads/2018/04/rafiki-throws-simba-gif-13.gif",
+        "title": "Quando ela nasceu?",
+        "description": "Essa é pra começar",
         "answer": 1,
         "alternatives": [
-           "2006",
-           "2013",
-           "2015",
-           "2017"
+          "4 julho de 1980",
+          "4 setembro de 1981",
+          "4 agosto de 1982",
+          "4 março de 1983"
         ]
-      },
-      {
-        "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
-        "title": "Antes de ter carreira solo, qual era o nome do grupo em que Beyoncé cantava?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-          "Spice Girls",
-          "Destiny's Child",
-          "Destiny's Women",
-          "Pussycat Dolls"
-        ]
-      },
-      {
-        "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
-        "title": "Quantos grammys ela já ganhou?",
-        "description": "",
-        "answer": 3,
-        "alternatives": [
-           "12",
-           "16",
-           "21",
-           "22"
-        ]
-      },
-      {
-        "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
-        "title": "Qual é o nome do alter ego de Beyoncé?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          "Sasha Fierce",
-          "Tina Knowles",
-          "Blue Ivy",
-          "Tina Fierce"
-        ]
-      },
-      {
-        "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
-        "title": "Mulher de vários talentos, Beyoncé também se aventura no mundo dos filmes. Dos filmes abaixo, em qual é o ela atuou? ",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-           "Homecoming",
-           "The Help",
-           "Cadillac Records",
-           "Fences"
-        ]
-      },
-      {
-        "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
-        "title": " Beyoncé também é uma pessoa muito ativa em projetos de caridade. Além de contribuir para várias causas, ela criou suas próprias organizações. Das opções abaixo, qual é o nome de uma delas? ",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          "Chime for Change",
-          "“International Planned Parenthood Federation",
-          "Believe Foundation",
-          "Survivor Foundation"
-        ]
-      },
-      {
-        "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
-        "title": "Em que ano a Bey veio ao Brasil?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-           "2006",
-           "2013",
-           "2015",
-           "2017"
-        ]
-      }
+        },
+    
+        {
+            "image": "https://31.media.tumblr.com/a5c18f9716d38cb52c2bd83e9a6bc12c/tumblr_mq1ybnnRE31rare4zo1_400.gif",
+            "title": "Quem é o marido de Beyoncé ?",
+            "description": "Uma bem facinha",
+            "answer": 0,
+            "alternatives": [
+                "Jay-Z",
+               "John Legend",
+               "Kayne West",
+               "Pharel Willians"
+            ]
+          },
+        {
+            "image": "https://media.tenor.com/images/503145e5bc048aba0845200bed1e66fb/tenor.gif",
+            "title": "Antes de ter carreira solo, qual era o nome do grupo em que Beyoncé cantava?",
+            "description": "Moleza essa",
+            "answer": 1,
+            "alternatives": [
+              "Spice Girls",
+              "Destiny's Child",
+              "Destiny's Women",
+              "Pussycat Dolls"
+            ]
+          },
+          {
+            "image": "https://i.pinimg.com/originals/64/ee/d5/64eed5fa7b0ce3660c7c4bcd072c0c86.gif",
+            "title": "Em que ano Beyoncé decidiu seguir carreira solo?",
+            "description": "O tempo passa rápido...",
+            "answer": 1,
+            "alternatives": [
+              "1998",
+              "1999",
+              "2000",
+              "2001"
+            ]
+          },
+          
+          {
+            "image": "https://3.bp.blogspot.com/-kNtSDCahJIU/WJ0Vk2ZbmHI/AAAAAAAAIog/rLnw34bb2CUTpIinvcVWvmaU9dzyorHKgCLcB/s1600/tumblr_n1dzcxw7HG1tqakyso1_500.gif",
+            "title": "Agora complete a frase: Devido ao sucesso da música, a palavra _________ foi adicionada ao Oxford English Dictionary.",
+            "description": "Consegue distinguir ?",
+            "answer": 2,
+            "alternatives": [
+               "Flawless",
+               "Diva",
+               "Bootylicious",
+               "Slay"
+            ]
+          },
+          
+          {
+            "image": "https://i.pinimg.com/originals/8f/80/61/8f8061ea15ce9a2a93d6e034848c411c.gif",
+            "title": "Qual é o nome de seu alter ego?",
+            "description": "Tá fácil essa, vai ?!",
+            "answer": 0,
+            "alternatives": [
+              "Sasha Fierce",
+              "Tina Knowles",
+              "Blue Ivy",
+              "Tina Fierce"
+            ]
+          },
+          {
+            "image": "http://s2.glbimg.com/_D2O73GSBjmHCCrF5sXq_QVoWLo=/400x225/s2.glbimg.com/Hm0p9Qp0yEh6VzYcldrICrAsvyo=/s.glbimg.com/et/gs/f/original/2015/09/04/beyonce_-_passinho.gif",
+            "title": "Em que ano ela veio ao Brasil?",
+            "description": "Pra ver se você tem memória boa",
+            "answer": 1,
+            "alternatives": [
+               "2006",
+               "2013",
+               "2015",
+               "2017"
+            ]
+          },
+          {
+            "image": "https://d1dlh1v05qf6d3.cloudfront.net/information/uploads/2018/05/beyonce-the-46th-annual-grammy-awards-press-room.jpg",
+            "title": "Quantos grammys ela já ganhou?",
+            "description": "Faz as contas aí",
+            "answer": 3,
+            "alternatives": [
+               "12",
+               "16",
+               "21",
+               "22"
+            ]
+          },
+          
+          {
+            "image": "https://16minionuc342010.files.wordpress.com/2015/08/beyonce-diretora.gif",
+            "title": "Mulher de vários talentos, Beyoncé também se aventura no mundo dos filmes. Dos filmes abaixo, em qual ela atuou? ",
+            "description": "Essa é pra provar mesmo",
+            "answer": 2,
+            "alternatives": [
+               "Homecoming",
+               "The Help",
+               "Cadillac Records",
+               "Fences"
+            ]
+          },
+          {
+            "image": "https://assets.papelpop.com/wp-content/uploads/2017/06/beey.gif",
+            "title": " Beyoncé também é uma pessoa muito ativa em projetos de caridade. Além de contribuir para várias causas, ela criou suas próprias organizações. Das opções abaixo, qual é o nome de uma delas? ",
+            "description": "Pensa um pouquinho",
+            "answer": 3,
+            "alternatives": [
+              "Chime for Change",
+              "“International Planned Parenthood Federation",
+              "Believe Foundation",
+              "Survivor Foundation"
+            ]
+          }
     ],
     "external": [
       

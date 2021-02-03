@@ -9,7 +9,7 @@ background-color: ${({ theme }) => {
 }};
 border-radius: 4px;
 overflow: hidden;
-h1, h2, h3 {
+h1, h3 {
   font-size: 23px;
   font-weight: 700;
   line-height: 1;
@@ -19,8 +19,12 @@ h1, h2, h3 {
 h1{
   margin-left:20%;
 }
+h2{
+  font-size:18px;
+  line-height:1.6;
+}
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-align:justify;
@@ -28,6 +32,8 @@ p {
 
   
 }
+
+
 `;
 
 Widget.Header = styled.header`
