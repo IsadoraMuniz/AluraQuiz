@@ -2,4 +2,4 @@ Criação de um quiz sobre a carreira da cantora Beyoncé, feito com base na sem
 
 ![quiz-bey](https://user-images.githubusercontent.com/37559523/106942076-7c6c4d00-6702-11eb-9200-8ddcc8f9c711.png)
 
-Link para jogar: bit.ly/beyonce-quiz
+Link para jogar: https://bit.ly/beyonce-quiz
