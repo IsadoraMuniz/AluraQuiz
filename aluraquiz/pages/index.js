@@ -3,8 +3,8 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import { Router, useRouter } from 'next/router';
-// import { AnimatePresence } from 'framer-motion';
 import { motion } from 'framer-motion';
+
 import db from '../db.json';
 
 import QuizBackground from '../src/components/QuizBackground';

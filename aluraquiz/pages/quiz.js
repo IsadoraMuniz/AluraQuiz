@@ -2,18 +2,20 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { func } from 'prop-types';
+import Lottie from 'react-lottie';
+import * as loadingAnimation from '../src/components/Animations/loading_2.json';
 import db from '../db.json';
 import QuizBackground from '../src/components/QuizBackground';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
-// import loadingAnimation from './animations/loading.json';
+
+
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 import AlternativesForm from '../src/components/AlternativesForm';
-// import { Lottie } from 'react-lottie'
 
 
-function EndImage(totalResult) {
+const EndImage = (totalResult) =>{
   return (
     totalResult <= 3 ? (
       <img
@@ -51,7 +53,7 @@ function EndImage(totalResult) {
   );
 }
 
-function EndMessage(totalResult) {
+const EndMessage = (totalResult) =>{
   return (
       totalResult <= 3 ? (
       <p>
@@ -83,6 +85,12 @@ function EndMessage(totalResult) {
 
   );
 }
+
+const defaultOptions = {
+  loop:true,
+  autoplay:true,
+  animationData: loadingAnimation.default
+};
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -141,16 +149,11 @@ function LoadingWidget() {
         Carregando...
       </Widget.Header>
 
-    {/* <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-        />
-    </Widget.Content> */}
+    <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+      <Lottie options={defaultOptions} />
+    </Widget.Content>
 
-      <Widget.Content>
+      {/* <Widget.Content>
         <img
           alt="Descrição"
           style={{
@@ -160,7 +163,7 @@ function LoadingWidget() {
           }}
           src="https://i.pinimg.com/originals/7e/1b/98/7e1b9840eed104a23db7b64998bba60c.gif"
         />
-      </Widget.Content>
+      </Widget.Content> */}
     </Widget>
   );
 }

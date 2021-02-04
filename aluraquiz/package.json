@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "framer-motion": "^3.3.0",
+    "lottie-web": "^5.7.6",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
+    "react-loading-animation": "^1.4.0",
     "react-lottie": "^1.2.3",
     "styled-components": "^5.0.0"
   },
