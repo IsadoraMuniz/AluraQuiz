@@ -17,7 +17,7 @@ import AlternativesForm from '../src/components/AlternativesForm';
 
 const EndImage = (totalResult) =>{
   return (
-    totalResult <= 3 ? (
+    totalResult <= 4 ? (
       <img
         alt="Descrição"
         style={{
