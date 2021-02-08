@@ -27,7 +27,7 @@ const EndImage = (totalResult) =>{
         }}
         src="https://i.gifer.com/Ycn9.gif"
       />
-    ) : totalResult >= 4 && totalResult <= 6 ? (
+    ) : totalResult >= 5 && totalResult <= 7 ? (
       <img
         alt="Descrição"
         style={{
@@ -55,7 +55,7 @@ const EndImage = (totalResult) =>{
 
 const EndMessage = (totalResult) =>{
   return (
-      totalResult <= 3 ? (
+      totalResult <= 4 ? (
       <p>
         {' '}
         Precisa melhorar, em ?!
@@ -64,7 +64,7 @@ const EndMessage = (totalResult) =>{
         Dá uma pesquisadinha a mais, garanto
         que vai valer a pena
       </p>
-    ) : totalResult >= 4 && totalResult <= 6 ? (
+    ) : totalResult >= 5 && totalResult <= 7 ? (
       <p>
         {' '}
         Nada mal !!
